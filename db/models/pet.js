@@ -8,11 +8,14 @@ module.exports = (sequelize, DataTypes) => {
     favoriteFood: DataTypes.STRING,
     picUrl: DataTypes.TEXT,
     picUrlSq: DataTypes.TEXT,
-    description: DataTypes.TEXT
+    description: DataTypes.TEXT,
+    createdAt: DataTypes.DATE,
+    updatedAt: DataTypes.DATE
   }, {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
+        
       }
     }
   });
